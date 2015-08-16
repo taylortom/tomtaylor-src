@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    	<meta name="apple-mobile-web-app-capable" content="yes">
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<title>{{title}}. | Thomas Taylor</title>
+
+        <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Oxygen:400,700,300|Source+Code+Pro:400,700'>
+        <link rel="stylesheet" type='text/css' href="/css/theme.css" />
+
+		<script type="text/javascript" src="/js/libs/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" src="/js/main.js"></script>
+		<script type="text/javascript" src="/js/libs/paper-full.min.js"></script>
+		<script type="text/paperscript" src="/js/sea.js" canvas="bg"></script>
+	</head>
+
+	<body class="{{id}}">
+
+		<div class="inner">
+
+			<div id="nav_bar">
+				<a class="button" data-id="home" href="/"><span class="icon-home3"></span></a>
+				<a class="button" target="_blank" href="http://www.github.com/taylortom">GitHub</a>
+				<a class="button" target="_blank" href="http://uk.linkedin.com/pub/thomas-taylor/1a/879/6a3/">LinkedIn</a>
+				<a class="button" data-id="blog" href="/blog">Blog</a>
+				<a class="button" href="cv">CV</a>
+			</div>
+			<a id="mobile_label" class="button no_desktop no_tablet" href="#">click to <span class="visible">hide</span><span class="hidden">show</span> links</a>
+
+			<!-- main page title -->
+			<div class="title">
+	    		<div class="text">
+	    		    <span class="wide no_tablet no_mobile">Hi, my<br/> name <br/>is Tom.</span>
+	                <span class="narrow no_desktop">Hi, my name is Tom.</span>
+	    		</div>
+				<a class="button status no_tablet no_mobile" href="http://www.kineo.com" target="_blank">
+        			Currently Open Source Learning Technologies Developer at <img class="kineo_logo" src="{{assetsDir}}/cgk_logo.png"/>
+	       		</a>
+	   		</div>
+
+			<!-- main content -->
+			<div class="page">
+				{{#if description}}
+				<div class="page_blurb info_section">
+					{{{description}}}
+				</div>
+				{{/if}}
+				<!-- dynamically replaced -->
+				<div class="content">
+					[PAGE_CONTENT]
+				</div>
+				<!-- 'return to top' button -->
+				<a class="back_up button" href="#"><span class="icon-arrow-up"></span><br/>UP</a>
+			</div>
+
+			<div id="footer" class="clearfix">
+				<div class="inner"><span class="year"></span>. Designed by Tom, coded by Tom.</div>
+			</div>
+
+		</div>
+
+		<!-- waaaaaves -->
+		<div class="paperscript"><canvas resize="true" id="bg"></canvas></div>
+	</body>
+</html>

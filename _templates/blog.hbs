@@ -1,0 +1,31 @@
+<div class="posts info_section block_bg">
+    {{#each posts}}
+        {{#ifCond page ../page}}
+            <div id="{{id}}" class="post">
+                <div class="title source_code"><span class="command">$ {{lowerCase title}}</span><span class="published">{{dateFormat published}}</span></div>
+                <div class="body">
+                    {{{body}}}
+                </div>
+                <div class="footer">
+                    <span class="prefix">Tags:</span>
+                    <div class="tags">
+                        {{#each tags}}
+                            <a class="button tag" href="#" data-value="{{{this}}}">{{{this}}}</a>
+                        {{/each}}
+                    </div>
+                </div>
+            </div>
+        {{/ifCond}}
+    {{/each}}
+
+    <div class="nav clearfix">
+    {{#ifCond page paginate.totalPages}}
+    {{else}}
+        <a class="button older" href="{{olderPageLink page}}"><span class="arrow-left"><</span> Older entries</a>
+    {{/ifCond}}
+    {{#ifCond page 1}}
+    {{else}}
+        <a class="button newer" href="{{newerPageLink page}}">Newer entries <span class="arrow-right">></a>
+    {{/ifCond}}
+    </div>
+</div>
