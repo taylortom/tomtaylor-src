@@ -1,0 +1,46 @@
+.source_code {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 300;
+  font-size: 80%;
+  color: rgba(20, 50, 90, 1);
+}
+
+.hljs-number {
+  font-weight: 500;
+}
+
+.hljs-keyword,
+.hljs-deletion {
+  font-weight: normal;
+}
+
+.hljs-comment {
+  opacity: 0.4;
+}
+
+.hljs-annotation {
+
+}
+
+.hljs-string,
+.hljs-addition {
+
+}
+
+.hljs-function .hljs-title,
+.hljs-change {
+
+}
+
+.hljs-tag .hljs-title,
+.hljs-doctype {
+
+}
+
+.hljs-tag .hljs-attribute {
+
+}
+
+.hljs-tag .hljs-value {
+
+}
