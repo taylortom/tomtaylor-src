@@ -1,0 +1,18 @@
+<div class="post info_section block_bg">
+    <div id="{{postModel.id}}" class="post">
+        <div class="title source_code"><span class="command">$ {{lowerCase postModel.title}}</span><span class="published">{{dateFormat postModel.published}}</span></div>
+        <div class="body">
+            {{{postModel.body}}}
+        </div>
+        <div class="footer">
+            {{#if postModel.tags}}
+                <span class="prefix icon-price-tags"></span>
+                <div class="tags">
+                    {{#each postModel.tags}}
+                        <a class="button tag" href="#" data-value="{{{this}}}">{{{this}}}</a>
+                    {{/each}}
+                </div>
+            {{/if}}
+        </div>
+    </div>
+</div>
