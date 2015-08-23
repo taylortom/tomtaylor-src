@@ -39,6 +39,8 @@
             // disable button for current page
             $("#nav_bar .button[data-id='" + $('body').attr('class').split(" ")[0] + "']").addClass('disabled');
         }
+
+        $('a.back_up').fadeOut(0);
     }
 
     function initListeners() {
@@ -81,7 +83,6 @@
         initNav();
     }
 
-    // TODO hide 'UP' button when at top
     function onScroll(event) {
         var fadeTime = 300;
         var $btn = $('a.back_up');
