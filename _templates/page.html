@@ -37,15 +37,15 @@
 	                <span class="narrow no_desktop">Hi, my name is Tom.</span>
 	    		</div>
 				<a class="button status no_tablet no_mobile" href="http://www.kineo.com" target="_blank">
-        			Currently Open Source Learning Technologies Developer at <img class="kineo_logo" src="{{assetsDir}}/cgk_logo.png"/>
+        			Currently Open Source Learning Technologies Developer at <img class="kineo_logo" src="{{pageModel.assetsDir}}/cgk_logo.png"/>
 	       		</a>
 	   		</div>
 
 			<!-- main content -->
 			<div class="page">
-				{{#if description}}
+				{{#if pageModel.description}}
 				<div class="page_blurb info_section">
-					{{{description}}}
+					{{{pageModel.description}}}
 				</div>
 				{{/if}}
 				<!-- dynamically replaced -->

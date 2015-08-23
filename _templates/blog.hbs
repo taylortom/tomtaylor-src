@@ -1,8 +1,8 @@
 <div class="posts info_section block_bg">
-    {{#each posts}}
+    {{#each pageModel.posts}}
         {{#ifCond page ../page}}
             <div id="{{id}}" class="post">
-                <div class="title source_code"><span class="command">$ {{lowerCase title}}</span><span class="published">{{dateFormat published}}</span></div>
+                <a href="{{dir}}" class="title source_code"><span class="command">$ {{lowerCase title}}</span><span class="published">{{dateFormat published}}</span></a>
                 <div class="body">
                     {{{body}}}
                 </div>
@@ -21,7 +21,7 @@
     {{/each}}
 
     <div class="nav clearfix">
-    {{#ifCond page paginate.totalPages}}
+    {{#ifCond page pageModel.paginate.totalPages}}
     {{else}}
         <a class="button older" href="{{olderPageLink page}}"><span class="arrow-left"><</span> Older entries</a>
     {{/ifCond}}
