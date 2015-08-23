@@ -12,7 +12,7 @@ span.hljs-comment { margin: 0; padding: 0; border: 0; font-size: 100%; font: inh
 body {
 	font-family: "RobotoDraft";
 	font-weight: 300;
-	font-size: 1.2em;
+	font-size: 1em;
 	color: rgb(20, 50, 90);
 	line-height: 1.4;
 	background-color: #d9ecff;
@@ -21,14 +21,11 @@ body {
 /*
 * Built-in
 */
-h1, h2, h3, h4, h5 {
-	font-weight: bold;
-}
-h1 { font-size: 2.2em; }
-h2 { font-size: 2.0em; }
-h3 { font-size: 1.8em; }
-h4 { font-size: 1.6em; }
-h5 { font-size: 1.4em; }
+h1 { font-size: 2.0em; }
+h2 { font-size: 1.8em; }
+h3 { font-size: 1.6em; }
+h4 { font-size: 1.4em; }
+h5 { font-size: 1.2em; }
 
 p {
     margin: 0 5px 15px 5px;
@@ -65,9 +62,8 @@ a.button {
 }
 a.back_up {
 	position:fixed;
-	opacity: 0;
 	left: 0;
-	top: 5%%;
+	top: 5%;
 	border-radius: 0 5px 5px 0;
 }
 
@@ -148,7 +144,6 @@ a.back_up {
 
 .inner > .title > .text {
 	line-height: normal;
-	width: 85%;
 	margin: 0 auto;
 	text-align: center;
 	text-shadow: 1.5px 1px 0.5px rgba(0,0,0,0.4);
@@ -171,6 +166,10 @@ a.back_up {
 */
 .post {
 	margin-bottom: 80px;
+}
+
+.post .title {
+	display: block;
 }
 .post > .body {
 	margin-bottom: 30px;
@@ -225,7 +224,7 @@ a.back_up {
 }
 #footer > .inner > [class^="icon-"] {
 	display: inline-block;
-	transform: translateY(24%);
+	transform: translateY(4px);
 	margin: 0 3px 0 3px;
 	font-size: 150%;
 }
