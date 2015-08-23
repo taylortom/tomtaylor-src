@@ -1,0 +1,38 @@
+{
+    "repos": {
+        "posts": "git@github.com:taylortom/blog-posts.git",
+        "site": "git@github.com:taylortom/taylortom.github.io.git"
+    },
+    "server": {
+        "url": "http://taylortom.co.uk",
+        "host": "taylortom.co.uk",
+        "base": "/",
+        "user": "tom@taylortom.co.uk",
+        "password": "=uFU1tcsBR@zt$6"
+    },
+    "globals": {
+        "assetsDir": "/assets"
+    },
+    "pages": {
+        "home": {
+            "title": "Home",
+            "subDir": false
+        },
+        "blog": {
+            "title": "Blog",
+            "description": "You've stumbled across my blog: the home of my most private, innermost thoughts and reflections. And random cat videos.",
+            "description": "<h4>The electric word.</h4>",
+            "templates": {
+                "page": "blog.hbs",
+                "post": "post.hbs"
+            },
+            "subDir": true,
+            "paginate": {
+                "pageSize": 10,
+                "pagedAttr": "posts"
+            },
+            "editor": "atom"
+        }
+    },
+    "version": "0.1.0"
+}
