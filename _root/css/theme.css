@@ -170,6 +170,7 @@ a.back_up {
 .post .title {
 	display: block;
 	margin-bottom: 20px;
+	padding: 15px;
 }
 
 .post > .body {
