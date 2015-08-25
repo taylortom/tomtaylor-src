@@ -5,7 +5,7 @@
     <span class="command">$ echo hello world!</span>
 </div>
 
-I'm Tom; a Brighton-based programmer, tinkerer and coffee-drinker. I graduated from the University of Brighton in 2012, and have been having it large on the south coast ever since.
+I'm Tom: a Brighton-based programmer, tinkerer and coffee-drinker. I graduated from the University of Brighton in 2012, and have been having it large on the south coast ever since.
 
 I'm currently working as an Open Source Learning Technologies Developer at <a href="http://www.kineo.com" target="_blank">City & Guilds Kineo</a> working full-time on the open-source <a href="https://community.adaptlearning.org/" target="_blank">Adapt project</a>.
 
