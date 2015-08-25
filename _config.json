@@ -24,7 +24,8 @@
             "description": "<h4>The electric word.</h4>",
             "templates": {
                 "page": "blog.hbs",
-                "post": "post.hbs"
+                "post": "post.hbs",
+                "tags": "tags.hbs"
             },
             "subDir": true,
             "paginate": {

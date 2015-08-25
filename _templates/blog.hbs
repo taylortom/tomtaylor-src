@@ -2,7 +2,7 @@
     {{#each pageModel.posts}}
         {{#ifCond page ../page}}
             <div id="{{id}}" class="post">
-                <a href="{{dir}}" class="title source_code"><span class="command">$ {{lowerCase title}}</span><span class="published">{{dateFormat published}}</span></a>
+                <a href="{{dir}}" class="title source_code button"><span class="command">$ {{lowerCase title}}</span><span class="published">{{dateFormat published}}</span></a>
                 <div class="body">
                     {{{body}}}
                 </div>
@@ -11,7 +11,7 @@
                         <span class="prefix icon-price-tags"></span>
                         <div class="tags">
                             {{#each tags}}
-                                <a class="button tag" href="#" data-value="{{{this}}}">{{{this}}}</a>
+                                <a class="button tag" href="{{this}}">{{this}}</a>
                             {{/each}}
                         </div>
                     {{/if}}
