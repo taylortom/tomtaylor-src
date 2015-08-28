@@ -1,7 +1,7 @@
 <div class="fd">
     <img class="pic" src="file://eyes.png" />
 </div>
-<div class="source_code">
+<div class="source_code title">
     <span class="command">$ echo hello world!</span>
 </div>
 
