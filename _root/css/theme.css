@@ -66,17 +66,6 @@ a.back_up {
 	border-radius: 0 5px 5px 0;
 }
 
-/*
-* Dynamic background
-*/
-.paperscript {
-	position: fixed;
-	top: 0;
-	height: 100%;
-	z-index: 1;
-}
-
-
 .inner {
 	position: relative;
 	z-index: 10;
@@ -85,6 +74,13 @@ a.back_up {
 	width: 88%;
 	margin: 0 auto;
 	padding: 40px 0 40px 0;
+}
+
+.paperscript {
+	position: fixed;
+	top: 0;
+	height: 100%;
+	z-index: 1;
 }
 
 /*
@@ -143,7 +139,6 @@ a.back_up {
 	font-weight: 300;
 	margin: 30px 5% 0 5%;
 }
-
 .inner > .title > .text {
 	line-height: normal;
 	margin: 0 auto;
@@ -197,24 +192,23 @@ a.back_up {
 	height: auto;
 	display: block;
 }
+
 .youtubeWrapper {
-  max-width: 98%;
-  margin: 0px auto;
-  margin-bottom: 20px;
+	max-width: 98%;
+	margin: 0px auto;
+	margin-bottom: 20px;
 }
-
 .youtubeWrapper > .inner {
-  position: relative;
-  padding-bottom: 60%;
-  height: 0px;
+	position: relative;
+	padding-bottom: 60%;
+	height: 0px;
 }
-
 .youtubeWrapper > .inner iframe {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
 }
 
 .post .prefix {
@@ -229,6 +223,7 @@ a.back_up {
 	border-radius: 2px;
 	padding: 5px;
 }
+
 .posts > .nav {
 	margin-top: -30px;
 	margin-bottom: 30px;
@@ -444,7 +439,6 @@ a.back_up {
 	font-variant: normal;
 	text-transform: none;
 	line-height: 1;
-	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
