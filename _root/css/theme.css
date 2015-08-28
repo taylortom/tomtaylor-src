@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=RobotoDraft|Roboto+Mono:300,500,700);
+@import url(https://fonts.googleapis.com/css?family=RobotoDraft:300,500,700|Roboto+Mono:300,500,700);
 
 /* html reset */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; } article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; } body { line-height: 1; } ol, ul { list-style: none; } blockquote, q { quotes: none; } blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; } table { border-collapse: collapse; border-spacing: 0; }
@@ -21,11 +21,11 @@ body {
 /*
 * Built-in
 */
-h1 { font-size: 2.0em; }
-h2 { font-size: 1.8em; }
-h3 { font-size: 1.6em; }
-h4 { font-size: 1.4em; }
-h5 { font-size: 1.2em; }
+h1 { font-size: 2.0em; font-weight: 500; margin: 2.0em 0 1.6em 0 }
+h2 { font-size: 1.8em; font-weight: 500; margin: 1.8em 0 1.4em 0 }
+h3 { font-size: 1.6em; font-weight: 500; margin: 1.6em 0 1.2em 0 }
+h4 { font-size: 1.4em; font-weight: 500; margin: 1.4em 0 1.0em 0 }
+h5 { font-size: 1.2em; font-weight: 500; margin: 1.2em 0 0.8em 0 }
 
 p {
     margin-bottom: 15px;
@@ -115,6 +115,10 @@ a.back_up {
 * Code
 */
 .source_code {
+	font-family: 'Roboto Mono', monospace;
+	font-weight: 300;
+	font-size: 80%;
+	color: rgba(20, 50, 90, 1);
     margin: 10px 0 10px 0;
     padding: 15px;
     border-radius: 5px;
@@ -125,10 +129,12 @@ a.back_up {
 	margin: 0 3px 0 3px;
 	border-radius: 3px;
 }
+.source_code.title {
+	font-size: 90%;
+}
 .source_code .command {
     color: rgba(20, 50, 90, 0.8);
-	font-weight: bold;
-	font-size: 120%;
+    font-weight: 700;
 	word-spacing: normal;
 	margin-bottom: 20px;
 }
@@ -175,6 +181,9 @@ a.back_up {
 	width: 98%;
 	margin-left: auto;
 	margin-right: auto;
+.post .title .published {
+	font-weight: 300;
+	font-size: 90%;
 }
 .post > .body .heading {
 	margin: 30px 0 15px 5px;
