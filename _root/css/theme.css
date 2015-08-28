@@ -75,6 +75,12 @@ a.back_up {
 	margin: 0 auto;
 	padding: 40px 0 40px 0;
 }
+.page .content .body {
+	margin-bottom: 30px;
+	width: 98%;
+	margin-left: auto;
+	margin-right: auto;
+}
 
 .paperscript {
 	position: fixed;
@@ -126,6 +132,9 @@ a.back_up {
 	border-radius: 3px;
 }
 .source_code.title {
+	display: block;
+	margin-bottom: 20px;
+	padding: 15px;
 	font-size: 90%;
 }
 .source_code .command {
@@ -164,19 +173,8 @@ a.back_up {
 .post {
 	margin-bottom: 80px;
 }
-
-.post .title {
-	display: block;
-	margin-bottom: 20px;
-	padding: 15px;
-}
-
-.post > .body {
-	margin-bottom: 30px;
-	width: 98%;
-	margin-left: auto;
-	margin-right: auto;
 .post .title .published {
+	margin-left: 20px;
 	font-weight: 300;
 	font-size: 90%;
 }
