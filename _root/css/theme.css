@@ -28,7 +28,7 @@ h4 { font-size: 1.4em; }
 h5 { font-size: 1.2em; }
 
 p {
-    margin: 0 5px 15px 5px;
+    margin-bottom: 15px;
 }
 a {
 	text-decoration: none;
@@ -115,7 +115,7 @@ a.back_up {
 * Code
 */
 .source_code {
-    margin: 10px 3px 10px 3px;
+    margin: 10px 0 10px 0;
     padding: 15px;
     border-radius: 5px;
     background-color: rgba(255, 255, 255,0.5);
@@ -132,9 +132,6 @@ a.back_up {
 	word-spacing: normal;
 	margin-bottom: 20px;
 }
-.source_code .published {
-	margin-left: 15px;
-}
 
 .inner > .title {
 	font-weight: 300;
@@ -150,7 +147,7 @@ a.back_up {
 	background-color: transparent;
 }
 .inner .page_blurb {
-	padding: 0 5px 0 5px;
+	padding: 0 5px 15px 5px;
 	text-align: center;
 }
 
@@ -398,7 +395,7 @@ a.back_up {
 	}
 
 	.inner .page_blurb {
-		padding: 0 5px 20px 5px;
+		padding: 0 5px 0 5px;
 		text-align: left;
 	}
 
