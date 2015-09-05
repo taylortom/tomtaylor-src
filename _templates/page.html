@@ -6,7 +6,7 @@
     	<meta name="apple-mobile-web-app-capable" content="yes">
 	    <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-		<title>{{title}}. | Thomas Taylor</title>
+		<title>{{pageModel.title.text}}. | Thomas Taylor</title>
 
         <link rel="stylesheet" type='text/css' href="/css/theme.css" />
         <link rel="stylesheet" type='text/css' href="/css/code.css" />
@@ -43,10 +43,15 @@
 
 			<!-- main content -->
 			<div class="page">
-				{{#if pageModel.description}}
-				<div class="page_blurb info_section">
-					{{{pageModel.description}}}
-				</div>
+				{{#if pageModel.title.show}}
+					<div class="title">
+						{{{pageModel.title.text}}}
+					</div>
+				{{/if}}
+				{{#if pageModel.description.show}}
+					<div class="page_blurb info_section">
+						{{{pageModel.description.text}}}
+					</div>
 				{{/if}}
 				<!-- dynamically replaced -->
 				<div class="content">

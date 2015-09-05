@@ -15,24 +15,40 @@
     },
     "pages": {
         "home": {
-            "title": "Home",
+            "title": {
+                "text": "Home",
+                "show": false
+            },
             "subDir": false
         },
         "blog": {
-            "title": "Blog",
-            "description": "You've stumbled across my blog: the home of my most private, innermost thoughts and reflections. And random cat videos.",
-            "description": "<h4>The electric word.</h4>",
-            "templates": {
-                "page": "blog.hbs",
-                "post": "post.hbs",
-                "tags": "tags.hbs"
+            "title": {
+                "text": "The electric word.",
+                "show": true
             },
+            "description": {
+                "text": "You've stumbled across my blog: the home of my most private, innermost thoughts and reflections. And random cat videos.",
+                "show": true
+            },
+            "template": "blog.hbs",
             "subDir": true,
             "paginate": {
                 "pageSize": 10,
                 "pagedAttr": "posts"
             },
-            "editor": "atom"
+            "editor": "atom",
+            "pages": {
+                "post": {
+                    "title": {
+                        "text": "This is a post.",
+                        "show": true
+                    },
+                    "template": "post.hbs"
+                },
+                "tags": {
+                    "template": "tags.hbs"
+                }
+            }
         }
     },
     "version": "0.1.0"
