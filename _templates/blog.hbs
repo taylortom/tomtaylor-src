@@ -23,11 +23,11 @@
     <div class="nav clearfix">
     {{#ifCond page pageModel.paginate.totalPages}}
     {{else}}
-        <a class="button older" href="{{olderPageLink page}}"><span class="arrow-left"><</span> Older entries</a>
+        <a class="button older" href="{{olderPageLink page}}"><span class="icon-arrow-left"></span> Older entries</a>
     {{/ifCond}}
     {{#ifCond page 1}}
     {{else}}
-        <a class="button newer" href="{{newerPageLink page}}">Newer entries <span class="arrow-right">></a>
+        <a class="button newer" href="{{newerPageLink page}}">Newer entries <span class="icon-arrow-right"></span></a>
     {{/ifCond}}
     </div>
 </div>
