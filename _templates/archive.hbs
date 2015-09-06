@@ -1,0 +1,7 @@
+<div class="archive">
+    <ul>
+    {{#each pageModel.posts}}
+        <li><a href="{{dir}}"><b>{{title}}</b></a>   {{dateFormat published}}</li>
+    {{/each}}
+    </ul>
+</div>
