@@ -2,11 +2,13 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
+    	<meta name="keywords" content="Thomas Taylor's personal website, Tom Taylor's personal website, Brighton">
+
 		<meta name="viewport" content="width=device-width, initial-scale=1">
     	<meta name="apple-mobile-web-app-capable" content="yes">
 	    <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-		<title>{{pageModel.title.text}}. | Thomas Taylor</title>
+		<title>{{title}} | Thomas Taylor</title>
 
         <link rel="stylesheet" type='text/css' href="/css/theme.css" />
         <link rel="stylesheet" type='text/css' href="/css/code.css" />
@@ -45,7 +47,7 @@
 			<div class="page">
 				{{#if pageModel.title.show}}
 					<div class="title">
-						{{{pageModel.title.text}}}
+						{{{pageModel.title.text}}}.
 					</div>
 				{{/if}}
 				{{#if pageModel.description.show}}

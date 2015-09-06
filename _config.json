@@ -23,7 +23,7 @@
         },
         "blog": {
             "title": {
-                "text": "The electric word.",
+                "text": "The electric word",
                 "show": true
             },
             "description": {
@@ -39,10 +39,6 @@
             "editor": "atom",
             "pages": {
                 "post": {
-                    "title": {
-                        "text": "This is a post.",
-                        "show": true
-                    },
                     "template": "post.hbs"
                 },
                 "tags": {
