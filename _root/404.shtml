@@ -48,9 +48,6 @@
             A problem has been detected and Taylortom.co.uk has been shut down to prevent damage to your computer.
             </p>
             <p>
-            <span class="path"></span>
-            </p>
-            <p>
             If this is the first time you've seen this error screen, reload the page. If this screen appears again, <a href="mailto:support@taylortom.co.uk">contact the site administrator</a> for more information.
             </p>
             <p>
@@ -60,7 +57,7 @@
             Technical information:
             </p>
             <p>
-            *** STOP: 0x00000000 (0x00000000, 0x00000000, 0x00000000, 0x00000000)
+            *** UNKNOWN URL: <span class="path"></span>
             </p>
             <p>
             <br>Click any link to continue<span class="blink">_</span>
