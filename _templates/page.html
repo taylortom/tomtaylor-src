@@ -42,16 +42,26 @@
 			</div>
 			<a id="mobile_label" class="button no_desktop no_tablet" href="#"><span class="icon-menu"></span></a>
 
-			<!-- main page title -->
-			<div class="title">
-	    		<div class="text">
-	    		    <span class="wide no_tablet no_mobile">Hi, my<br/> name <br/>is Tom.</span>
-	                <span class="narrow no_desktop">Hi, my name is Tom.</span>
-	    		</div>
-				<a class="button status no_tablet no_mobile" href="http://www.kineo.com" target="_blank">
-        			Currently Open Source Learning Technologies Developer at <img class="kineo_logo" src="{{pageModel.assetsDir}}/cgk_logo.png"/>
-	       		</a>
-	   		</div>
+			<div class="sidebar">
+				<!-- main page title -->
+				<div class="title">
+		    		<div class="text">
+		    		    <span class="wide no_tablet no_mobile">Hi, my<br/> name <br/>is Tom.</span>
+		                <span class="narrow no_desktop">Hi, my name is Tom.</span>
+		    		</div>
+					<a class="button status no_tablet no_mobile" href="http://www.kineo.com" target="_blank">
+	        			Currently Open Source Learning Technologies Developer at <img class="kineo_logo" src="{{pageModel.assetsDir}}/cgk_logo.png"/>
+		       		</a>
+		   		</div>
+				{{#if pageModel.links}}
+				<div class="links">
+					<h5>Navigation:</h5>
+					{{#each pageModel.links}}
+						<a class="link button" href="{{this}}">{{@key}}</a>
+					{{/each}}
+				</div>
+				{{/if}}
+       		</div>
 
 			<!-- main content -->
 			<div class="page">
