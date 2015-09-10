@@ -38,11 +38,17 @@
             },
             "editor": "atom",
             "pages": {
-                "post": {
+                "posts": {
                     "template": "post.hbs"
                 },
                 "tags": {
+                    "title": "Posts tagged with '[TAG]'",
                     "template": "tags.hbs"
+                },
+                "archive": {
+                    "title": "The blog archives",
+                    "description": "Here you'll find every post from my blog's distant past, so put your feet up, brush off the dust, and read at your own peril.",
+                    "template": "archive.hbs"
                 }
             },
             "links": {
