@@ -34,55 +34,61 @@
 		<div class="inner">
 
 			<div id="nav_bar">
-				<a class="button" data-id="home" href="/"><span class="icon-home3"></span></a>
-				<a class="button" target="_blank" href="http://www.github.com/taylortom"><!--<span class="icon-github3"></span>&nbsp;-->GitHub</a>
-				<a class="button" target="_blank" href="http://uk.linkedin.com/pub/thomas-taylor/1a/879/6a3/"><!--<span class="icon-linkedin2"></span>&nbsp;-->LinkedIn</a>
-				<a class="button" data-id="blog" href="/blog"><!--<span class="icon-blog">&nbsp;</span>-->Blog</a>
-				<a class="button" href="/cv"><!--<span class="icon-file-text2">&nbsp;</span>-->CV</a>
+				<div id="inner">
+					<a class="button" data-id="home" href="/"><span class="icon-home3"></span></a>
+					<a class="button" target="_blank" href="http://www.github.com/taylortom"><!--<span class="icon-github3"></span>&nbsp;-->GitHub</a>
+					<a class="button" target="_blank" href="http://uk.linkedin.com/pub/thomas-taylor/1a/879/6a3/"><!--<span class="icon-linkedin2"></span>&nbsp;-->LinkedIn</a>
+					<a class="button" data-id="blog" href="/blog"><!--<span class="icon-blog">&nbsp;</span>-->Blog</a>
+					<a class="button" href="/cv"><!--<span class="icon-file-text2">&nbsp;</span>-->CV</a>
+				</div>
 			</div>
 			<a id="mobile_label" class="button no_desktop no_tablet" href="#"><span class="icon-menu"></span></a>
 
-			<div class="sidebar">
-				<!-- main page title -->
-				<div class="title">
-		    		<div class="text">
-		    		    <span class="wide no_tablet no_mobile">Hi, my<br/> name <br/>is Tom.</span>
-		                <span class="narrow no_desktop">Hi, my name is Tom.</span>
-		    		</div>
-					<a class="button status no_tablet no_mobile" href="http://www.kineo.com" target="_blank">
-	        			Currently Open Source Learning Technologies Developer at <img class="kineo_logo" src="{{pageModel.assetsDir}}/cgk_logo.png"/>
-		       		</a>
-		   		</div>
-				{{#if pageModel.links}}
-				<div class="links">
-					<h5>Navigation:</h5>
-					{{#each pageModel.links}}
-						<a class="link button" href="{{this}}">{{@key}}</a>
-					{{/each}}
-				</div>
+			<!-- main page title -->
+			<div class="sidebar title">
+	    		<div class="text">
+	    		    <span class="wide no_tablet no_mobile">Hi, my<br/> name <br/>is Tom.</span>
+	                <span class="narrow no_desktop">Hi, my name is Tom.</span>
+	    		</div>
+				<a class="button status no_tablet no_mobile" href="http://www.kineo.com" target="_blank">
+        			Currently Open Source Learning Technologies Developer at <img class="kineo_logo" src="{{pageModel.assetsDir}}/cgk_logo.png"/>
+	       		</a>
+	   		</div>
+
+			<!-- page title and description -->
+			{{#if title.show}}
+			<div class="header">
+				{{#if title}}
+					<div class="title">
+						{{{title.text}}}.
+					</div>
 				{{/if}}
+				{{#if description}}
+					<div class="page_blurb">
+						{{{description}}}
+					</div>
+				{{/if}}
+			</div>
+			{{/if}}
+
+			<!-- links sidebar -->
+			{{#if pageModel.links}}
+			<div class="sidebar links">
+				<h5>Navigation:</h5>
+				{{#each pageModel.links}}
+					<a class="link button" href="{{this}}">{{@key}}</a>
+				{{/each}}
        		</div>
+			{{/if}}
 
 			<!-- main content -->
 			<div class="page">
-				{{#if title.show}}
-				<div class="header">
-					{{#if title}}
-						<div class="title">
-							{{{title.text}}}.
-						</div>
-					{{/if}}
-					{{#if description}}
-						<div class="page_blurb">
-							{{{description}}}
-						</div>
-					{{/if}}
-				</div>
-				{{/if}}
-				<!-- dynamically replaced -->
+
 				<div class="content">
+					<!-- dynamically replaced -->
 					[PAGE_CONTENT]
 				</div>
+
 				<!-- 'return to top' button -->
 				<a class="back_up button" href="#"><span class="icon-arrow-up"></span><br/>UP</a>
 			</div>

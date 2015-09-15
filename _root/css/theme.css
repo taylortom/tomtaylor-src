@@ -41,6 +41,19 @@ strong, b {
 em {
 	font-style: italic;
 }
+ol, ul {
+	margin-bottom: 15px;
+	margin-left: 20px;
+}
+ul {
+	list-style: circle;
+}
+ol {
+	list-style: decimal;
+}
+li {
+	margin-bottom: 7px;
+}
 blockquote, q {
 	margin: 10px 30px 20px 20px;
 	padding-left: 10px;
@@ -66,14 +79,14 @@ a.back_up {
 	border-radius: 0 5px 5px 0;
 }
 
-.inner {
+body > .inner {
 	position: relative;
 	z-index: 10;
 }
 .page {
 	width: 88%;
 	margin: 0 auto;
-	padding: 40px 0 40px 0;
+	padding: 10px 0 15px 0;
 }
 .page .content .body {
 	margin-bottom: 30px;
@@ -122,10 +135,10 @@ a.back_up {
 	font-weight: 400;
 	font-size: 80%;
 	color: rgba(20, 50, 90, 1);
-    margin: 10px 0 10px 0;
-    padding: 15px;
-    border-radius: 5px;
-    background-color: rgba(255, 255, 255,0.5);
+	margin: 10px 0 10px 0;
+	padding: 15px;
+	border-radius: 5px;
+	background-color: rgba(255, 255, 255,0.6);
 }
 .source_code.inline {
 	padding: 2px;
@@ -149,7 +162,14 @@ a.back_up {
 	font-weight: 300;
 	margin: 30px 5% 0 5%;
 }
-.inner > .sidebar > .title > .text {
+.inner > .sidebar.links {
+margin-left: 10%;}
+
+.inner > .sidebar.links a {
+	display: inline-block;
+	margin-bottom: 5px;
+}
+.inner > .sidebar.title > .text {
 	line-height: 0.9;
 	margin: 0 auto;
 	text-align: center;
@@ -158,23 +178,15 @@ a.back_up {
 	font-family: "Nixie One", cursive;
 	background-color: transparent;
 }
-.inner > .sidebar .links {
-    margin-top: 40px;
-	font-size: 90%
-}
 
-.inner > .sidebar .links a {
-    display: block;
-    padding: 5px 5px 5px 10px;
-    margin-bottom: 5px;
-}
-
-.page > .header {
-	padding-bottom: 30px;
+.header {
+	padding-top: 30px;
 	text-align: center;
+	width: 80%;
+	margin: 0 auto;
 }
 
-.page > .header > .title {
+.header > .title {
 	font-size: 1.5em;
 	margin-bottom: 0.5em;
 }
@@ -297,7 +309,7 @@ a.back_up {
 
 .night .source_code {
 	color: rgba(255, 255, 255, 0.75);
-	background-color: rgba(255, 255, 255,0.15);
+	background-color: rgba(255, 255, 255,0.2);
 }
 
 .night .source_code .command {
@@ -315,7 +327,7 @@ a.back_up {
 
 
 .night a.button {
-	background-color: rgba(255, 255, 255, 0.15);
+	background-color: rgba(255, 255, 255, 0.2);
 	text-decoration: none;
 	font-weight: 300;
 	color: #D5D5D5;
@@ -338,10 +350,20 @@ a.back_up {
 		min-width: 501px;
 	}
 
-	.inner > .sidebar > .title {
-		width: 85%;
+	#nav_bar {
+		text-align: center;
 	}
-	.inner > .sidebar > .title > .text {
+
+	#nav_bar .inner {
+		display: inline-block;
+	}
+
+	.inner > .sidebar.title {
+		width: 85%;
+		margin: 0 auto;
+		padding-top: 25px;
+	}
+	.inner > .sidebar.title > .text {
 		background-color: transparent;
 	}
 
@@ -357,11 +379,7 @@ a.back_up {
 	}
 
 	#nav_bar {
-		top: 0;
-		left: 0;
 		margin: 0;
-		margin-top: 0;
-		padding-left: 5%;
 	}
 
 	#nav_bar .button {
@@ -373,13 +391,20 @@ a.back_up {
 		font-weight: normal;
 	}
 
-	.inner > .sidebar > .title > .text {
+	.inner > .sidebar.title > .text {
 		font-size: 4em;
+	}
+
+	.inner > .sidebar.links {
+	}
+
+	.page {
+		padding: 40px 0 40px 0;
 	}
 
 	.page > .content img.pic {
 		float: right;
-		margin-top: -10px;
+		margin: -10px 10px 10px 10px;
 	}
 }
 
@@ -389,6 +414,10 @@ a.back_up {
 
 	body {
 		min-width: 951px;
+	}
+
+	#nav_bar {
+		padding-left: 5%;
 	}
 
 	a:hover {
@@ -404,33 +433,49 @@ a.back_up {
 	.inner > .sidebar {
 		width: 22%;
 		float: right;
+		position: inherit;
 		margin: 0;
 		margin-top: 20px;
 		padding-right: 0;
 		margin-right: 7%;
 	}
-	.inner > .sidebar > .title > .text {
+	.inner > .sidebar.title > .text {
 		text-align: right;
 		padding-bottom: 20px;
 	}
-	.inner > .sidebar > .title > .text .narrow {
+	.inner > .sidebar.title > .text .narrow {
 		display: none;
 	}
-	.inner > .sidebar > .title > .status {
+	.inner > .sidebar.title > .status {
 		display: block;
 		font-size: 90%;
 		text-align: right;
 
 }
-	.inner > .sidebar > .title > .status img {
+	.inner > .sidebar.title > .status img {
 		padding-top: 10px;
 		width: 65%;
 		display: inline-block;
 		margin: 0 auto;
 	}
 
-	.page > .header {
+	.inner > .sidebar.links {
+	    margin-top: 20px;
+	    font-size: 90%;
+	    clear: both;
+	    width: 22%;
+	    margin-left: 0;
+	}
+
+	.inner > .sidebar.links a {
+	    padding: 5px 5px 5px 10px;
+	    display: block;
+	}
+
+	.header {
 		text-align: left;
+		margin-left: 7%;
+		width: 60%;
 	}
 
 	.page {
@@ -444,5 +489,8 @@ a.back_up {
 	}
 	.night a.button.disabled:hover {
 		text-decoration: none;
+	}
+}
+ne;
 	}
 }
