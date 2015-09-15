@@ -1,16 +1,7 @@
 /*
-
-Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-license.org/
-
+Monokai Sublime style.
+Derived from Monokai by noformnocontent http://nn.mit-license.org/
 */
-
-.hljs {
-  display: block;
-  overflow-x: auto;
-  padding: 0.5em;
-  background: #23241f;
-  -webkit-text-size-adjust: none;
-}
 
 .hljs,
 .hljs-tag,
@@ -126,7 +117,7 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
 .hljs-prompt,
 .hljs-link_label,
 .hljs-link_url {
-  color: #e6db74;
+  color: #81BDFF;
 }
 
 .hljs-comment,
@@ -138,7 +129,8 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
 .hljs-shebang,
 .apache .hljs-sqbracket,
 .tex .hljs-formula {
-  color: #FFFFFF;
+  color: #8C85A5;
+  font-weight: 300 !important;
 }
 
 .coffeescript .javascript,
@@ -150,5 +142,82 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
 .xml .hljs-cdata,
 .xml .php,
 .php .xml {
+  opacity: 0.5;
+}
+
+
+
+
+
+/* Base16 Atelier Lakeside Light - Theme */
+/* by Bram de Haan (http://atelierbram.github.io/syntax-highlighting/atelier-schemes/lakeside) */
+/* Original Base16 color scheme by Chris Kempson (https://github.com/chriskempson/base16) */
+
+/* Atelier-Lakeside Comment */
+.night .hljs-comment {
+  color: #6FA7CA;
+}
+
+/* Atelier-Lakeside Red */
+.night .hljs-variable,
+.night .hljs-attribute,
+.night .hljs-tag,
+.night .hljs-regexp,
+.night .hljs-name,
+.night .ruby .hljs-constant,
+.night .xml .hljs-tag .hljs-title,
+.night .xml .hljs-pi,
+.night .xml .hljs-doctype,
+.night .html .hljs-doctype,
+.night .css .hljs-id,
+.night .css .hljs-class,
+.night .css .hljs-pseudo {
+  color: #d22d72;
+}
+
+/* Atelier-Lakeside Yellow */
+.night .ruby .hljs-class .hljs-title,
+.night .css .hljs-rule .hljs-attribute {
+  color: #8a8a0f;
+}
+
+/* Atelier-Lakeside Green */
+.night .hljs-string,
+.night .hljs-value,
+.night .hljs-inheritance,
+.night .hljs-header,
+.night .ruby .hljs-symbol,
+.night .xml .hljs-cdata {
+  color: #568c3b;
+}
+
+/* Atelier-Lakeside Blue */
+.night .hljs-function,
+.night .python .hljs-decorator,
+.night .python .hljs-title,
+.night .ruby .hljs-function .hljs-title,
+.night .ruby .hljs-title .hljs-keyword,
+.night .perl .hljs-sub,
+.night .javascript .hljs-title,
+.night .coffeescript .hljs-title {
+  color: #257fad;
+}
+
+.night .hljs {
+  display: block;
+  overflow-x: auto;
+  background: #ebf8ff;
+  color: #516d7b;
+  padding: 0.5em;
+  -webkit-text-size-adjust: none;
+}
+
+.night .coffeescript .javascript,
+.night .javascript .xml,
+.night .tex .hljs-formula,
+.night .xml .javascript,
+.night .xml .vbscript,
+.night .xml .css,
+.night .xml .hljs-cdata {
   opacity: 0.5;
 }
