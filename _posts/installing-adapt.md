@@ -13,7 +13,12 @@ You'll also need the command line tools to be able to pull down the Adapt reposi
 
 This is by far the trickiest part of the installation process, largely due to the issues surrounding file permissions you can easily run into. After several less than straightforward installs, the following instructions are my recommended method.
 
-***A note on node/npm installation paths**: by default, these are stored in `/usr/local/`, which requires root access to write to. There are three routes around this: one is to run every `npm install` as root (definitely not a good idea, as it could result in something like: `sudo npm install trojan-disguised-as-module`); another is to change the owner of the contents of `/usr/local/` to your user account (if you're using a shared computer, this is not advisable); the third option is to change the home of global modules to somewhere you **do** have permission. This is the option I use below.*
+**A note on node/npm installation paths**
+<br>By default, these are stored in `/usr/local/`, which requires root access to write to. There are three routes around this:
+
+1. Run every `npm install` as root (definitely not a good idea, as it could result in something like: `sudo npm install trojan-disguised-as-module`).
+1. Change the owner of the contents of `/usr/local/` to your user account (if you're using a shared computer, this is not advisable).
+1. Change the home of global modules to somewhere you **do** have permission. This is the option I use below.
 
 Create (and change to) a directory in your home folder to store your globally accessible node modules, and add this to your system path variable:
 ```
