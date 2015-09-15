@@ -18,5 +18,5 @@ def insertionsort(list):
 				list[holeIndex+1] = list[holeIndex]
 				holeIndex -= 1
 
-			list[holeIndex+1] = item</pre>
+			list[holeIndex+1] = item
 ```

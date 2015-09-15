@@ -23,5 +23,5 @@ def bubblesort(list):
 				swap(list, index-1, index)
 				swapped = True
 
-		if not swapped: break</pre>
+		if not swapped: break
 ```
