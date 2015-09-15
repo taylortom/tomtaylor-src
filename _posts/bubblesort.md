@@ -19,7 +19,7 @@ def bubblesort(list):
 		for index in range(len(list)):
 			if index == 0: continue
 
-			if list[index-1] &gt; list[index]:
+			if list[index-1] > list[index]:
 				swap(list, index-1, index)
 				swapped = True
 

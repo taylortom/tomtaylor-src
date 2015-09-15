@@ -14,7 +14,7 @@ def insertionsort(list):
 
 			holeIndex = index-1
 
-			while holeIndex &gt;= 0 and list[holeIndex] &gt; item:
+			while holeIndex >= 0 and list[holeIndex] > item:
 				list[holeIndex+1] = list[holeIndex]
 				holeIndex -= 1
 
