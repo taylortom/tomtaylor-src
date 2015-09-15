@@ -36,7 +36,7 @@ Derived from Monokai by noformnocontent http://nn.mit-license.org/
 .hljs-title,
 .css .hljs-class,
 .hljs-class .hljs-title:last-child {
-  color: #a6e22e;
+  color: #82BF06;
 }
 
 .hljs-link_url {
@@ -84,14 +84,14 @@ Derived from Monokai by noformnocontent http://nn.mit-license.org/
 .hljs-typename,
 .hljs-name,
 .css .hljs-attribute {
-  color: #66d9ef;
+  color: #3D859E;
 }
 
 .hljs-variable,
 .hljs-params,
 .hljs-class .hljs-title,
 .hljs-aspect .hljs-title {
-  color: #f8f8f2;
+  color: #5F9FCE;
 }
 
 .hljs-string,
@@ -201,15 +201,6 @@ Derived from Monokai by noformnocontent http://nn.mit-license.org/
 .night .javascript .hljs-title,
 .night .coffeescript .hljs-title {
   color: #257fad;
-}
-
-.night .hljs {
-  display: block;
-  overflow-x: auto;
-  background: #ebf8ff;
-  color: #516d7b;
-  padding: 0.5em;
-  -webkit-text-size-adjust: none;
 }
 
 .night .coffeescript .javascript,
