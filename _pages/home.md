@@ -1,5 +1,5 @@
 <div class="fd">
-    <img class="pic" src="file://eyes.png" />
+    <img class="pic" src="file://pro.png" />
 </div>
 <div class="source_code title">
     <span class="command">$ echo hello world!</span>
