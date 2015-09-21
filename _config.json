@@ -21,6 +21,13 @@
             },
             "subDir": false
         },
+        "cv": {
+            "title": {
+                "text": "CV",
+                "show": true
+            },
+            "subDir": true
+        },
         "blog": {
             "title": {
                 "text": "The electric word",
