@@ -13,6 +13,9 @@
     "globals": {
         "assetsDir": "/assets"
     },
+    "theme": {
+        "main": "base.less"
+    },
     "pages": {
         "home": {
             "title": {
