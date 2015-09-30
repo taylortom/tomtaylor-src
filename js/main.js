@@ -29,10 +29,11 @@
     }
 
     function initNav() {
-        if($('#mobile_label').css('display') != 'none') {
+        if($('#menu_button').css('display') !== 'none') {
+            debugger;
             $('#nav_bar').slideUp(0);
-            $('#mobile_label span.visible').css('display', 'none');
-            $('#mobile_label span.hidden').css('display', 'inline');
+            $('#menu_button span.visible').css('display', 'none');
+            $('#menu_button span.hidden').css('display', 'inline');
         }
         else {
             $('#nav_bar').slideDown(0);
@@ -45,7 +46,7 @@
 
     function initListeners() {
     	$('#nav_bar .button').click(onButtonClicked);
-        $('#mobile_label').click(toggleNav);
+        $('#menu_button').click(toggleNav);
         $(window).scroll(onScroll);
 
         if (matchMedia) {
@@ -64,8 +65,8 @@
 
         var $nav_bar = $('#nav_bar');
 
-        $('#mobile_label span.visible').css('display', $nav_bar.css('display') == 'none' ? 'inline' : 'none');
-        $('#mobile_label span.hidden').css('display', $nav_bar.css('display') != 'none' ? 'inline' : 'none');
+        $('#menu_button span.visible').css('display', $nav_bar.css('display') == 'none' ? 'inline' : 'none');
+        $('#menu_button span.hidden').css('display', $nav_bar.css('display') != 'none' ? 'inline' : 'none');
 
         $nav_bar.slideToggle(400);
     }

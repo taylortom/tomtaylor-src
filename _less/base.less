@@ -1,0 +1,31 @@
+@import url(imports.less);
+
+/**
+* Shortcuts
+*/
+.clearfix {
+  clear: both !important;
+}
+.hidden {
+  display: none !important;
+}
+.disabled {
+  opacity: 0.4;
+  cursor: default;
+  background-color: transparent !important;
+}
+@media (max-width: 500px) {
+	.no_mobile {
+		.hidden;
+	}
+}
+@media (min-width: 501px) and (max-width: 950px) {
+	.no_tablet {
+    .hidden;
+  }
+}
+@media (min-width: 951px) {
+	.no_desktop {
+    .hidden;
+  }
+}

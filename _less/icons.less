@@ -1,15 +1,13 @@
 @font-face {
 	font-family: 'icons';
-	src:url('fonts/icons.eot?-di2pgn');
-	src:url('fonts/icons.eot?#iefix-di2pgn') format('embedded-opentype'),
-		url('fonts/icons.ttf?-di2pgn') format('truetype'),
-		url('fonts/icons.woff?-di2pgn') format('woff'),
-		url('fonts/icons.svg?-di2pgn#icons') format('svg');
+	src:url('/assets/icons.woff?-di2pgn') format('woff');
+	src:url('/assets/icons.svg?-di2pgn#icons') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+// [class^="icon-"], [class*=" icon-"] {
+.icon {
 	font-family: 'icons';
 	speak: none;
 	font-style: normal;
@@ -24,6 +22,7 @@
 }
 
 .icon-home3:before {
+	.icon;
 	content: "\e600";
 }
 .icon-pencil:before {

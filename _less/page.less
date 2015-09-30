@@ -1,0 +1,62 @@
+body {
+	font-family: @font-type;
+	font-weight: 300;
+	font-size: 1em;
+	color: @font-colour;
+	line-height: 1.4;
+	background-color: #d9ecff;
+	.inner {
+		position: relative;
+		z-index: 10;
+	}
+}
+
+.page {
+	width: 88%;
+	margin: 0 auto;
+	padding: 30px 0 30px 0;
+	.content {
+		.body {
+			margin-bottom: 30px;
+			width: 98%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+}
+
+.paperscript {
+	position: fixed;
+	top: 0;
+	height: 100%;
+	z-index: 1;
+}
+
+@media (min-width: 501px) and (max-width: 950px) {
+	body {
+		min-width: 501px;
+	}
+
+	.page {
+		margin: auto;
+		width: 83%;
+	}
+}
+
+@media (min-width: 501px) {
+	.page {
+		padding: 40px 0 40px 0;
+	}
+}
+
+/* Desktop */
+@media (min-width: 951px) {
+	body {
+		min-width: 951px;
+	}
+
+	.page {
+		width: 60%;
+		margin-left: 7%;
+	}
+}
