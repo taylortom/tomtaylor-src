@@ -1,13 +1,11 @@
 @font-face {
 	font-family: 'icons';
-	src:url('/assets/icons.woff?-di2pgn') format('woff');
-	src:url('/assets/icons.svg?-di2pgn#icons') format('svg');
+	src:url('/assets/icons/icons.woff?-di2pgn') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
 
-// [class^="icon-"], [class*=" icon-"] {
-.icon {
+[class^="icon-"], [class*=" icon-"] {
 	font-family: 'icons';
 	speak: none;
 	font-style: normal;
@@ -15,15 +13,12 @@
 	font-variant: normal;
 	text-transform: none;
 	line-height: 1;
-
-	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
 
 .icon-home3:before {
-	.icon;
-	content: "\e600";
+	content: '\e600';
 }
 .icon-pencil:before {
 	content: "\e64b";
