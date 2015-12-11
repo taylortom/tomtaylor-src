@@ -30,7 +30,6 @@
 
     function initNav() {
         if($('#menu_button').css('display') !== 'none') {
-            debugger;
             $('#nav_bar').slideUp(0);
             $('#menu_button span.visible').css('display', 'none');
             $('#menu_button span.hidden').css('display', 'inline');
@@ -40,8 +39,6 @@
             // disable button for current page
             $("#nav_bar .button[data-id='" + $('body').attr('class').split(" ")[0] + "']").addClass('disabled');
         }
-
-        $('a.back_up').fadeOut(0);
     }
 
     function initListeners() {
@@ -85,10 +82,10 @@
     }
 
     function onScroll(event) {
-        var fadeTime = 300;
         var $btn = $('a.back_up');
+        var atScreenTop = $(window).scrollTop() < $(window).height();
 
-        if($(window).scrollTop() < $(window).height()) $btn.fadeOut(fadeTime);
-        else $btn.fadeIn(fadeTime);
+        if(atScreenTop) $btn.addClass('hidden');
+        else $btn.removeClass('hidden');
     }
 })();
