@@ -1,9 +1,9 @@
 .night {
-	color: #D5D5D5;
-	background-color: #003366;
+	color: @fontColour-night;
+	background-color: @backgroundColour-night;
 
 	a {
-		color: white;
+		color: @linkColour-night;
 
 		&.button {
 			background-color: rgba(255, 255, 255, 0.2);
@@ -29,12 +29,12 @@
 	}
 
 	.source_code {
-		color: rgba(255, 255, 255, 0.75);
-		background-color: rgba(255, 255, 255,0.2);
+		color: @fontColour-code-night;
+		background-color: @backgroundColour-code-night;
 
 		.command {
-			color: rgba(255, 255, 255, 0.8);
-			font-weight: bold;
+			color: @fontColour-codeCommand-night;
+			font-weight: @fontWeight-codeCommand-night;
 		}
 	}
 }

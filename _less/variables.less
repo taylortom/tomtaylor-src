@@ -1,19 +1,52 @@
-// TODO move relevant stuff to variables.less
+/*
+* Camelcase variable naming convention:
+*    styleType-target/div/etc.-theme/extraInfo
+*    e.g. fontWeight-blogPost-night
+*/
+
+// TODO button styling
 
 /* Text styling */
 
-@font-type-default: "Raleway", sans-serif;
-@font-colour-default: rgb(20, 50, 90);
-@font-weight-default: 300;
-@font-size-default: 1em;
+// default
+@fontType-default: "Raleway", sans-serif;
+@fontColour-default: rgb(20, 50, 90);
+@fontWeight-default: 300;
+@fontSize-default: 1em;
+// night
+@fontColour-night: #D5D5D5;
+// main title
+@fontType-mainTitle: "Nixie One", cursive;
+@fontColour-mainTitle: @fontColour-default;
+@fontSize-mainTitle: 3.5em;
+@fontSize-mainTitle-mobile: 4em;
+// code
+@fontType-code: "Roboto Mono", monospace;
+@fontColour-code: rgba(20, 50, 90, 1);
+@fontColour-codeCommand-night: rgba(255, 255, 255, 0.8);
+@fontColour-code-night: rgba(255, 255, 255, 0.75);
+@fontWeight-code: 400;
+@fontSize-code: @font-size-default;
 
-@font-type-code: "Roboto Mono", monospace;
-@font-colour-code: rgba(20, 50, 90, 1);
-@font-weight-code: 400;
+@fontSize-headerTitle: 1.5em;
+
+// links
+@linkColour: rgb(0, 127, 194);
+@linkColour-night: white;
+
+// defaults
+@h1-size: 2.0em;
+@h2-size: 1.8em;
+@h3-size: 1.6em;
+@h4-size: 1.4em;
+@h5-size: 1.2em;
+@h-weight: 500;
 
 /* Colours */
 
-// TODO colours
+@backgroundColour-default: #d9ecff;
+@backgroundColour-night: #003366;
+@backgroundColour-code-night: rgba(255, 255, 255,0.2);
 
 /* Screen sizes */
 

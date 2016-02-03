@@ -1,6 +1,6 @@
 .inner {
   .sidebar {
-    font-weight: 300;
+    font-weight: @font-weight-default;
     margin: 30px 5% 0 5%;
   	width: 87%;
 
@@ -26,12 +26,12 @@
       	margin: 0 auto;
       	text-align: center;
       	text-shadow: 1px 1px 0.5px rgba(0,0,0,0.3);
-      	font-size: 3.5em;
-      	font-family: "Nixie One", cursive;
+      	font-family: @font-type-mainTitle;
+      	font-size: @font-size-mainTitle;
       	background-color: transparent;
 
 				@media @tablet, @desktop {
-					font-size: 4em;
+					font-size: @font-size-mainTitle-mobile;
 				}
 
 				@media @desktop {
