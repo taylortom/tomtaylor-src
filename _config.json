@@ -13,6 +13,38 @@
     "globals": {
         "assetsDir": "/assets"
     },
+    "menu": [
+      {
+        "id": "home",
+        "html": "<span class='icon-home3'></span>",
+        "url": "/",
+        "target": "_self"
+      },
+      {
+        "id": "",
+        "html": "GitHub",
+        "url": "http://www.github.com/taylortom",
+        "target": "_blank"
+      },
+      {
+        "id": "",
+        "html": "LinkedIn",
+        "url": "http://uk.linkedin.com/pub/thomas-taylor/1a/879/6a3/",
+        "target": "_blank"
+      },
+      {
+        "id": "blog",
+        "html": "Blog",
+        "url": "/blog",
+        "target": "_self"
+      },
+      {
+        "id": "",
+        "html": "CV",
+        "url": "/cv",
+        "target": "_self"
+      }
+    ],
     "pages": {
         "home": {
             "title": {
