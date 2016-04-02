@@ -1,5 +1,5 @@
 <div class="archive">
-    {{#each pageModel.posts}}
-        <a class="button" href="/{{../pageModel.id}}/{{dir}}"><b>{{title}}</b>   {{dateFormat published}}</a>
+    {{#each posts}}
+        <a class="button" href="/{{../id}}/{{dir}}"><b>{{title}}</b>   {{dateFormat published}}</a>
     {{/each}}
 </div>

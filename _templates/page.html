@@ -2,17 +2,17 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-    	<meta name="keywords" content="Thomas Taylor's personal website, Tom Taylor's personal website, Brighton, UK">
+  	<meta name="keywords" content="Thomas Taylor's personal website, Tom Taylor's personal website, Brighton, UK">
 
 		<meta name="viewport" content="width=device-width, height=device-height initial-scale=1">
-    	<meta name="apple-mobile-web-app-capable" content="yes">
-	    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  	<meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
 		<title>{{{title.text}}} | Thomas Taylor</title>
 
-        <link rel="stylesheet" type='text/css' href="/css/theme.css" />
-        <link rel="stylesheet" type='text/css' href="/css/code.css" />
-        <link rel="stylesheet" type='text/css' href="/css/icons.css" />
+    <link rel="stylesheet" type='text/css' href="/css/theme.css" />
+    <link rel="stylesheet" type='text/css' href="/css/code.css" />
+    <link rel="stylesheet" type='text/css' href="/css/icons.css" />
 
 		<script type="text/javascript" src="/js/libs/jquery-1.10.2.min.js"></script>
 		<script type="text/javascript" src="/js/main.js"></script>
@@ -35,11 +35,16 @@
 
 			<div id="nav_bar">
 				<div id="inner">
+					{{#each menu}}
+						<a class="button" {{#if}}data-id="{{id}}"{{/if}} href="{{url}}">{{html}}</a>
+					{{/each}}
+					<!--
 					<a class="button" data-id="home" href="/"><span class="icon-home3"></span></a>
-					<a class="button" target="_blank" href="http://www.github.com/taylortom"><!--<span class="icon-github3"></span>&nbsp;-->GitHub</a>
-					<a class="button" target="_blank" href="http://uk.linkedin.com/pub/thomas-taylor/1a/879/6a3/"><!--<span class="icon-linkedin2"></span>&nbsp;-->LinkedIn</a>
-					<a class="button" data-id="blog" href="/blog"><!--<span class="icon-blog">&nbsp;</span>-->Blog</a>
-					<a class="button" href="/cv"><!--<span class="icon-file-text2">&nbsp;</span>-->CV</a>
+					<a class="button" target="_blank" href="http://www.github.com/taylortom">GitHub</a>
+					<a class="button" target="_blank" href="http://uk.linkedin.com/pub/thomas-taylor/1a/879/6a3/">LinkedIn</a>
+					<a class="button" data-id="blog" href="/blog">Blog</a>
+					<a class="button" href="/cv">CV</a>
+					-->
 				</div>
 			</div>
 			<a id="mobile_label" class="button no_desktop no_tablet" href="#"><span class="icon-menu"></span></a>
@@ -51,31 +56,29 @@
 	                <span class="narrow no_desktop">Hi, my name is Tom.</span>
 	    		</div>
 				<a class="button status no_tablet no_mobile" href="http://www.kineo.com" target="_blank">
-        			Currently Open Source Learning Technologies Developer at <img class="kineo_logo" src="{{pageModel.assetsDir}}/cgk_logo.png"/>
+        			Currently Open Source Learning Technologies Developer at <img class="kineo_logo" src="{{assetsDir}}/cgk_logo.png"/>
 	       		</a>
 	   		</div>
 
 			<!-- page title and description -->
 			{{#if title.show}}
 			<div class="header">
-				{{#if title}}
-					<div class="title">
-						{{{title.text}}}.
-					</div>
-				{{/if}}
-				{{#if description}}
+				<div class="title">
+					{{{title.text}}}.
+				</div>
+				{{#if description.show}}
 					<div class="page_blurb">
-						{{{description}}}
+						{{{description.text}}}
 					</div>
 				{{/if}}
 			</div>
 			{{/if}}
 
 			<!-- links sidebar -->
-			{{#if pageModel.links}}
+			{{#if links}}
 			<div class="sidebar links">
 				<h5>Navigation:</h5>
-				{{#each pageModel.links}}
+				{{#each links}}
 					<a class="link button" href="{{this}}">{{@key}}</a>
 				{{/each}}
        		</div>

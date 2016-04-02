@@ -1,5 +1,5 @@
 <div class="posts">
-    {{#each pageModel.posts}}
+    {{#each posts}}
         {{#ifCond page ../page}}
             <div id="{{id}}" class="post">
                 <a href="{{dir}}" class="title source_code button"><span class="command">$ {{lowerCase title}}</span><span class="published">{{dateFormat published}}</span></a>
@@ -21,7 +21,7 @@
     {{/each}}
 
     <div class="nav clearfix">
-    {{#ifCond page pageModel.paginate.totalPages}}
+    {{#ifCond page paginate.totalPages}}
     {{else}}
         <a class="button older" href="{{olderPageLink page}}"><span class="icon-arrow-left"></span> Older entries</a>
     {{/ifCond}}
