@@ -1,0 +1,30 @@
+// for loading in a pre-made theme
+@import url(highlight.less);
+
+.source_code {
+	font-family: @fontType-code;
+	font-weight: @fontWeight-code;
+	font-size: 80%;
+	color: @fontColour-code;
+	margin: 10px 0 10px 0;
+	padding: 15px;
+	border-radius: 5px;
+	background-color: rgba(255, 255, 255,0.6);
+  &.inline {
+  	padding: 2px;
+  	margin: 0 3px 0 3px;
+  	border-radius: 3px;
+  }
+  &.title {
+  	display: block;
+  	margin-bottom: 20px;
+  	padding: 15px;
+  	font-size: 90%;
+  }
+  .command {
+    color: rgba(20, 50, 90, 0.8);
+    font-weight: 700;
+  	word-spacing: normal;
+  	margin-bottom: 20px;
+  }
+}

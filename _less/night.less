@@ -1,0 +1,40 @@
+.night {
+	color: @fontColour-night;
+	background-color: @backgroundColour-night;
+
+	a {
+		color: @linkColour-night;
+
+		&.button {
+			background-color: rgba(255, 255, 255, 0.2);
+			text-decoration: none;
+			font-weight: 300;
+			color: #D5D5D5;
+
+			@media @desktop {
+				&:hover {
+					background-color: rgba(255, 255, 255, 0.3);
+				}
+				&.disabled {
+					&:hover {
+						text-decoration: none;
+					}
+				}
+			}
+		}
+
+		&.title.source_code.button {
+			text-decoration: none;
+		}
+	}
+
+	.source_code {
+		color: @fontColour-code-night;
+		background-color: @backgroundColour-code-night;
+
+		.command {
+			color: @fontColour-codeCommand-night;
+			font-weight: @fontWeight-codeCommand-night;
+		}
+	}
+}

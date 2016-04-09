@@ -1,0 +1,30 @@
+a {
+	&.button {
+		background-color: rgba(255, 255, 255, 0.4);
+		border-radius: 5px;
+		text-decoration: none;
+		color: rgba(20, 50, 90, 0.8);
+		padding: 10px;
+		font-weight: 500;
+		&:hover {
+			background-color: rgba(255, 255, 255, 0.7);
+			text-decoration: none;
+		}
+	}
+	&.back_up {
+		top: 0;
+		left: 0;
+		position: fixed;
+		width: 100%;
+		padding-left: 0;
+		padding-right: 0;
+		text-align: center;
+		background-color: rgba(255, 255, 255, 0.6);
+		@media @tablet, @desktop{
+			top: 5%;
+			width: 25px;
+			padding: 7px;
+			border-radius: 0 5px 5px 0;
+		}
+	}
+}

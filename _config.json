@@ -45,6 +45,12 @@
         "target": "_self"
       }
     ],
+    "theme": {
+        "main": "base.less",
+        "options": {
+            "compress": true
+        }
+    },
     "pages": {
         "home": {
             "title": {
@@ -52,6 +58,13 @@
                 "show": false
             },
             "subDir": false
+        },
+        "cv": {
+            "title": {
+                "text": "CV",
+                "show": true
+            },
+            "subDir": true
         },
         "blog": {
             "title": {

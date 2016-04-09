@@ -1,0 +1,85 @@
+.inner {
+  .sidebar {
+    font-weight: @font-weight-default;
+    margin: 30px 5% 0 5%;
+  	width: 87%;
+
+		@media @desktop {
+			width: 22%;
+			float: right;
+			position: inherit;
+			margin: 0;
+			margin-top: 20px;
+			padding-right: 0;
+			margin-right: 7%;
+		}
+
+    &.title {
+      @media @tablet {
+    		width: 82%;
+    		margin: 0 auto;
+    		padding-top: 25px;
+    	}
+
+      .text {
+      	line-height: 0.9;
+      	margin: 0 auto;
+      	text-align: center;
+      	text-shadow: 1px 1px 0.5px rgba(0,0,0,0.3);
+      	font-family: @font-type-mainTitle;
+      	font-size: @font-size-mainTitle;
+      	background-color: transparent;
+
+				@media @tablet, @desktop {
+					font-size: @font-size-mainTitle-mobile;
+				}
+
+				@media @desktop {
+					text-align: right;
+					padding-bottom: 20px;
+				}
+
+				.narrow {
+					@media @desktop {
+						display: none;
+					}
+				}
+      }
+
+			@media @desktop {
+				.status {
+					display: block;
+					font-size: 90%;
+					text-align: right;
+
+					img {
+						padding-top: 10px;
+						width: 65%;
+						display: inline-block;
+						margin: 0 auto;
+					}
+				}
+			}
+    }
+
+    &.links {
+      margin-left: 10%;
+      a {
+      	display: inline-block;
+      	margin-bottom: 5px;
+				@media @desktop {
+				    padding: 5px 5px 5px 10px;
+				    display: block;
+				}
+      }
+
+			@media @desktop {
+		    margin-top: 20px;
+		    font-size: 90%;
+		    clear: both;
+		    width: 22%;
+		    margin-left: 0;
+			}
+    }
+  }
+}
