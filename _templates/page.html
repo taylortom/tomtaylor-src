@@ -4,14 +4,12 @@
 		<meta charset="utf-8" />
 		<meta name="keywords" content="Thomas Taylor's personal website, Tom Taylor's personal website, Brighton, UK">
 		<meta name="viewport" content="width=device-width, height=device-height initial-scale=1">
-  	<meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
 
 		<title>{{{title.text}}} | Thomas Taylor</title>
 
-    <link rel="stylesheet" type='text/css' href="/css/theme.css" />
-    <link rel="stylesheet" type='text/css' href="/css/code.css" />
-    <link rel="stylesheet" type='text/css' href="/css/icons.css" />
+		<link rel="stylesheet" type='text/css' href="/theme.css" />
 
 		<script type="text/javascript" src="/js/libs/jquery-1.10.2.min.js"></script>
 		<script type="text/javascript" src="/js/main.js"></script>
@@ -26,22 +24,15 @@
 		</script>
 	</head>
 
-	<body class="{{id}}">
+	<body data-page="{{id}}">
 
 		<div class="inner">
 
 			<div id="nav_bar">
 				<div id="inner">
 					{{#each menu}}
-						<a class="button" {{#if}}data-id="{{id}}"{{/if}} href="{{url}}">{{html}}</a>
+						<a class="button" {{#if id}}data-id="{{id}}" {{/if}}href="{{url}}">{{{html}}}</a>
 					{{/each}}
-					<!--
-					<a class="button" data-id="home" href="/"><span class="icon-home3"></span></a>
-					<a class="button" target="_blank" href="http://www.github.com/taylortom">GitHub</a>
-					<a class="button" target="_blank" href="http://uk.linkedin.com/pub/thomas-taylor/1a/879/6a3/">LinkedIn</a>
-					<a class="button" data-id="blog" href="/blog">Blog</a>
-					<a class="button" href="/cv">CV</a>
-					-->
 				</div>
 			</div>
 			<a id="menu_button" class="button no_desktop no_tablet" href="#"><span class="icon-menu"></span></a>
