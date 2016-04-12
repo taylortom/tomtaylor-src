@@ -37,7 +37,7 @@
         else {
             $('#nav_bar').slideDown(0);
             // disable button for current page
-            $("#nav_bar .button[data-id='" + $('body').attr('class').split(" ")[0] + "']").addClass('disabled');
+            $("#nav_bar .button[data-id='" + $('body').attr('data-page') + "']").addClass('disabled');
         }
     }
 
