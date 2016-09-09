@@ -10,4 +10,4 @@ Source Tree also integrates nicely with most of the popular diff/merge tools, an
 
 <strong>Available for Mac OS X for free </strong>
 
-<a href="http://www.color.com/">http://www.sourcetreeapp.com/</a>
+<a href="http://www.sourcetreeapp.com/">http://www.sourcetreeapp.com/</a>
