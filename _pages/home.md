@@ -39,6 +39,7 @@ I have skills and interests in the following areas:
     user_experience,
     black_coffee,
     leicester_city_fc,
+    <a href="http://photography.taylortom.co.uk">photography</a>,
     music,
     beat_literature,
     cinema,
