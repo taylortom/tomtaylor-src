@@ -41,7 +41,6 @@ I have skills and interests in the following areas:
     leicester_city_fc,
     <a href="http://photography.taylortom.co.uk">photography</a>,
     music,
-    beat_literature,
     cinema,
     gym
 </div>
