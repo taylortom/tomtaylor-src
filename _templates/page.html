@@ -31,7 +31,7 @@
 			<div id="nav_bar">
 				<div id="inner">
 					{{#each menu}}
-						<a class="button" {{#if id}}data-id="{{id}}" {{/if}}href="{{url}}">{{{html}}}</a>
+						<a class="button" {{#if id}}data-id="{{id}}" {{/if}}href="{{url}}"{{#if target}} target="{{target}}"{{/if}}>{{{html}}}</a>
 					{{/each}}
 				</div>
 			</div>
