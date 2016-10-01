@@ -1,10 +1,15 @@
+
 body {
+	// hide before theme applied
+	display: none;
+	&.day {
+		background-color: @backgroundColour-default;
+		color: @fontColour-default;
+	}
 	font-family: @fontType-default;
 	font-weight: @fontWeight-default;
 	font-size: @fontSize-default;
-	color: @fontColour-default;
 	line-height: 1.4;
-	background-color: @backgroundColour-default;
 	.inner {
 		position: relative;
 		z-index: 10;
