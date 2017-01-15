@@ -5,7 +5,7 @@ var nightTheme = false;
 $('body').ready(setTheme);
 
 $(function init() {
-    if(nightTheme) loadNightLogoImage();
+    // if(nightTheme) loadNightLogoImage();
     initNav();
     initListeners();
     updateFooter();
@@ -15,7 +15,7 @@ $(function init() {
 
 function setTheme() {
     var hour = (new Date()).getHours();
-    var isDayTime = hour < 20 || hour > 4;
+    var isDayTime = hour < 20 && hour > 4;
     $("body").addClass(isDayTime ? "day" : "night");
     nightTheme = !isDayTime;
 }
