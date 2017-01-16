@@ -2,7 +2,7 @@
 
 I've been meaning to do a bit of hacking in Python for a while now, but haven't really had the free time what with the mountain of uni work. Now I'm all done and nearly a graduate, I thought it'd be a good time to give Python a go.
 
-In the attempt of killing two birds with one stone, I thought it'd be quite an interesting challenge to work through my <a href="http://blog.taylortom.co.uk/?p=834">big fat book of algorithms</a> and implement them in Python, because hey, you can never implement too many algorithms right?
+In the attempt of killing two birds with one stone, I thought it'd be quite an interesting challenge to work through my <a href="http://blog.tomtaylor.name/?p=834">big fat book of algorithms</a> and implement them in Python, because hey, you can never implement too many algorithms right?
 
 I thought I'd start of gently, so the first one I tackled was the <a href="http://en.wikipedia.org/wiki/Quicksort#Simple_version">simple version Quicksort</a>:
 

@@ -12,16 +12,16 @@ I have skills and interests in the following areas:
 <div class="source_code">
     <span class="command">$ ls ~/skills</span><br/>
     oo_software_design,
-    actionScript_3,
+    test_driven_development,
     javascript,
+    less,
     node,
-	jquery,
+    mongo_db,
+  	jquery,
     backbone,
     grunt,
     python,
     java,
-    objective-C,
-    cocos2D,
     git,
     subversion,
     latex
@@ -29,19 +29,19 @@ I have skills and interests in the following areas:
 
 <div class="source_code">
     <span class="command">$ ls ~/interests</span><br/>
-    technology,
+    user_experience,
     open_source_software,
     learning_technology,
-    user_experience,
+    ethical_software_practices,
     black_coffee,
     leicester_city_fc,
-    <a href="http://photography.taylortom.co.uk">photography</a>,
-    music,
+    live_music,
+    <a href="http://photography.tomtaylor.name">photography</a>,
     cinema,
     gym
 </div>
 
-I'm currently an Open Source Learning Technologies Developer at <a href="http://www.kineo.com" target="_blank">City & Guilds Kineo</a> working full-time on the open-source <a href="https://www.adaptlearning.org/" target="_blank">Adapt project</a>.
+I'm currently an Open Source Learning Technologies Developer at <a href="http://www.kineo.com" target="_blank">Kineo</a> working full-time on the open-source <a href="https://www.adaptlearning.org/" target="_blank">Adapt project</a>.
 
 If you'd like to know more about my professional experience, you'll find links to my CV and portfolio as well as my LinkedIn and GitHub profiles somewhere around here.
 
