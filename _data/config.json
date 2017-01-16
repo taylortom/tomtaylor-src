@@ -21,6 +21,12 @@
         "target": "_self"
       },
       {
+        "id": "photography",
+        "html": "<span class='icon-camera'></span>",
+        "url": "//photography.tomtaylor.name",
+        "target": "_blank"
+      },
+      {
         "id": "",
         "html": "GitHub",
         "url": "http://www.github.com/taylortom",
