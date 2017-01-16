@@ -50,6 +50,6 @@ If you have any ideas or projects you think we could collaborate on, I would lov
 <div class="source_code">
     <span class="command">$ contact_me</span><br/>
     Thomas_Taylor<br/>
-    tom@taylortom.co.uk<br/><br/>
+    hello@tomtaylor.name<br/><br/>
     <span class="command">$ exit</span>
 </div>

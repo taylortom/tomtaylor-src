@@ -4,10 +4,10 @@
         "site": "git@github.com:taylortom/taylortom.github.io.git"
     },
     "server": {
-        "url": "http://taylortom.co.uk",
-        "host": "taylortom.co.uk",
+        "url": "http://tomtaylor.name",
+        "host": "tomtaylor.name",
         "base": "/",
-        "user": "tom@taylortom.co.uk",
+        "user": "hello@tomtaylor.name",
         "password": "=uFU1tcsBR@zt$6"
     },
     "globals": {
