@@ -36,7 +36,7 @@ I have skills and interests in the following areas:
     black_coffee,
     leicester_city_fc,
     live_music,
-    <a href="http://photography.tomtaylor.name">photography</a>,
+    photography,
     cinema,
     gym
 </div>
