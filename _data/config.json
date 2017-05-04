@@ -27,6 +27,18 @@
         "target": "_blank"
       },
       {
+        "id": "blog",
+        "html": "Blog",
+        "url": "/blog",
+        "target": "_self"
+      },
+      {
+        "id": "portfolio",
+        "html": "Portfolio",
+        "url": "//code.tomtaylor.name",
+        "target": "_blank"
+      },
+      {
         "id": "",
         "html": "GitHub",
         "url": "http://www.github.com/taylortom",
@@ -37,12 +49,6 @@
         "html": "LinkedIn",
         "url": "http://uk.linkedin.com/pub/thomas-taylor/1a/879/6a3/",
         "target": "_blank"
-      },
-      {
-        "id": "blog",
-        "html": "Blog",
-        "url": "/blog",
-        "target": "_self"
       },
       {
         "id": "",
@@ -64,13 +70,6 @@
                 "show": false
             },
             "subDir": false
-        },
-        "cv": {
-            "title": {
-                "text": "CV",
-                "show": true
-            },
-            "subDir": true
         },
         "blog": {
             "title": {
@@ -106,6 +105,13 @@
                 "Latest posts": "/blog",
                 "Archive": "/blog/archive"
             }
+        },
+        "cv": {
+            "title": {
+                "text": "CV",
+                "show": true
+            },
+            "subDir": true
         }
     },
     "version": "0.1.0"
