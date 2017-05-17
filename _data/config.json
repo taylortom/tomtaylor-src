@@ -27,12 +27,6 @@
         "target": "_blank"
       },
       {
-        "id": "blog",
-        "html": "Blog",
-        "url": "/blog",
-        "target": "_self"
-      },
-      {
         "id": "portfolio",
         "html": "Portfolio",
         "url": "//code.tomtaylor.name",
