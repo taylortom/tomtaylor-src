@@ -5,7 +5,7 @@
     <span class="command">$ echo hello world!</span>
 </div>
 
-I'm Tom: a Brighton-based programmer, tinkerer and coffee-drinker. I graduated from the University of Brighton in 2012, and have been having it large on the south coast ever since.
+I'm Tom: a Brighton-based web application developer, tinkerer and coffee-drinker. I graduated from the University of Brighton in 2012, and have been having it large on the south coast ever since.
 
 I have skills and interests in the following areas:
 
@@ -41,7 +41,7 @@ I have skills and interests in the following areas:
     gym
 </div>
 
-I'm currently an Open Source Learning Technologies Developer at <a href="http://www.kineo.com" target="_blank">Kineo</a> working full-time on the open-source <a href="https://www.adaptlearning.org/" target="_blank">Adapt project</a>.
+I'm currently an **Open Source Learning Technologies Developer** at <a href="http://www.kineo.com" target="_blank">Kineo</a> looking after the open-source <a href="https://www.adaptlearning.org/" target="_blank">Adapt authoring tool</a>.
 
 If you'd like to know more about my professional experience, you'll find links to my CV and portfolio as well as my LinkedIn and GitHub profiles somewhere around here.
 
