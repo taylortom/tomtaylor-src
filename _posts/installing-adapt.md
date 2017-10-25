@@ -4,12 +4,12 @@ If you opt not to use the Adapt authoring tool, setting up your computer to work
 
 This guide assumes you are completely new to web development, and therefore will need to install everything from scratch. If this is not the case, some of the steps may be inapplicable.
 
-# Install Xcode using the App Store
+#### Install Xcode using the App Store
 Grab Xcode from the App Store, and fire it up when installed, agreeing to all terms and conditions. If this isn't done, building the node source may fail later.
 
 You'll also need the command line tools to be able to pull down the Adapt repositories using git. To get these, type `git` in a terminal window, and follow the instructions.
 
-# Install node and node package manager
+#### Install node and node package manager
 
 This is by far the trickiest part of the installation process, largely due to the issues surrounding file permissions you can easily run into. After several less than straightforward installs, the following instructions are my recommended method.
 
@@ -41,7 +41,7 @@ make install
 When this has finished, close the terminal, reopen and try the `node` and `npm` commands to confirm everything installed as expected (after running the node shell, you'll need to exit pressing `ctrl+c` twice).
 
 
-# Install the required command line interfaces
+#### Install the required command line interfaces
 
 Finally, you'll need to install both the adapt-cli and the grunt-cli globally. To do this:
 ```
@@ -49,7 +49,7 @@ npm install grunt-cli -g
 npm install adapt-cli -g
 ```
 
-# Test out your installation
+#### Test out your installation
 Now let's try downloading and building the vanilla adapt build:
 
 Clone the adapt_framework from github. (This assumes you have ssh set up, if not check out <a href="https://help.github.com/articles/generating-ssh-keys/" target="_blank">github for a nice guide</a>):
