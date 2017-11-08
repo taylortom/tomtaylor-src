@@ -98,6 +98,16 @@
             "links": {
                 "Latest posts": "/blog",
                 "Archive": "/blog/archive"
+            },
+            "feed": {
+              "title": "Tom Taylor's Blog",
+              "description": "Tom Taylor's personal blog.",
+              "icon": "https://avatars3.githubusercontent.com/u/1059083?s=460&v=4",
+              "author": {
+                "name": "Tom Taylor",
+                "avatar": "https://avatars3.githubusercontent.com/u/1059083?s=460&v=4"
+              },
+              "pageSize": 100
             }
         },
         "cv": {
