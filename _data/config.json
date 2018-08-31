@@ -27,8 +27,8 @@
         "target": "_blank"
       },
       {
-        "id": "portfolio",
-        "html": "Portfolio",
+        "id": "code",
+        "html": "Code",
         "url": "//code.tomtaylor.name",
         "target": "_blank"
       },
