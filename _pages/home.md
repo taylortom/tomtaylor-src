@@ -5,26 +5,24 @@
     <span class="command">$ echo hello world!</span>
 </div>
 
-I'm Tom: a Brighton-based web application developer, tinkerer and coffee-drinker. I graduated from the University of Brighton in 2012, and have been having it large on the south coast ever since.
+I'm Tom: a Brighton-based web application engineer, tinkerer and coffee-drinker. I graduated from the University of Brighton in 2012, and have been having it large on the south coast ever since.
 
 I have skills and interests in the following areas:
 
 <div class="source_code">
     <span class="command">$ ls ~/skills</span><br/>
-    oo_software_design,
+		oo_software_design,
+		product_development,
+		software_architecture,
     requirements_analysis,
     test_driven_development,
     continuous_integration,
     es6,
     node.js,
     mongodb,
-    jquery,
-    vue.js
-    backbone,
     grunt,
     less,
-    git,
-    latex
+    git
 </div>
 
 <div class="source_code">
